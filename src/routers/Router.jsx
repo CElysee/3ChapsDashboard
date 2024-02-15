@@ -7,6 +7,8 @@ import AdminFoodCategories from "../components/admin_screens/Dashboard/FoodCateg
 import AdminFoodIngredients from "../components/admin_screens/Dashboard/FoodIngredients";
 import AdminFoodModifiers from "../components/admin_screens/Dashboard/FoodModifiers";
 import AdminFoodItems from "../components/admin_screens/Dashboard/FoodItems";
+import Login from "../components/auth/Login";
+import Register from "../components/auth/Register";
 
 
 function Router() {
@@ -19,6 +21,8 @@ function Router() {
       <Route path="/admin/food_ingredients" element={<AdminFoodIngredients />} />
       <Route path="/admin/food_modifiers" element={<AdminFoodModifiers />} />
       <Route path="/admin/food_items" element={<AdminFoodItems />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
     </Routes>
   )
 }
